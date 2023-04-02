@@ -1,14 +1,15 @@
-package primeNumbers;
+package task1.primeNumbers;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Prime {
-/*
-a small improvement)
-the possibility of setting the range prime number.
- */
+    /*
+    a small improvement)
+    the possibility of setting the range prime number.
+     */
     public static void findPrimeNumbers() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input start range");

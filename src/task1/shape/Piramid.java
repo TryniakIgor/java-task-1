@@ -1,4 +1,4 @@
-package shape;
+package task1.shape;
 
 public class Piramid extends Shape {
     private double height;

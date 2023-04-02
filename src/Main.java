@@ -1,35 +1,27 @@
-import converting.Fahrenheit;
-import converting.Kelvin;
-import primeNumbers.Prime;
-import shape.Ball;
-import shape.Cylinder;
-import shape.Piramid;
-import shape.Box;
-
-
-
-import java.io.IOException;
+import annotationAndExeption.immutablePerson.ImmutablePerson;
+import annotationAndExeption.immutablePerson.InputEmailException;
+import annotationAndExeption.movie.InputYearException;
+import annotationAndExeption.movie.Movie;
+import annotationAndExeption.validEmail.User;
 
 public class Main {
 
+    public static void main(String[] args) throws NoSuchFieldException {
+        ImmutablePerson.isFieldImmutable();
+        System.out.println("*******************");
 
-    public static void main(String[] args) throws IOException {
-        //Prime.findPrimeNumbers();
+        try {
+            User user = new User("Luk", "luk@ mail.com", "0000");
+        } catch (InputEmailException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println("*******************");
 
-        Fahrenheit fahrenheit = new Fahrenheit();
-        fahrenheit.convert(10);
-        Kelvin kelvin = new Kelvin();
-        kelvin.convert(10);
-
-       Ball ball = new Ball(5);
-       Cylinder cylinder = new Cylinder(3, 4);
-       Piramid piramid = new Piramid(3,4);
-
-       Box box = new Box(500);
-        System.out.println(box.add(ball));
-        System.out.println(box.add(piramid));
-        System.out.println(box.add(cylinder));
-
+        Movie movie = new Movie("Mavka", 2023);
+        try {
+            movie.setYear(2025);
+        } catch (InputYearException e) {
+            System.out.println(e.getMessage());
+        }
     }
-
 }

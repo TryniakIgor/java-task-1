@@ -1,4 +1,4 @@
-package shape;
+package task1.shape;
 
 public abstract class  Shape {
     public abstract double getVolume();

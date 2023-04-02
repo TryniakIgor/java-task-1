@@ -1,4 +1,4 @@
-package shape;
+package task1.shape;
 
 public class Box extends Shape {
 
@@ -17,7 +17,7 @@ public class Box extends Shape {
             freeSpace -= shape.getVolume();
             return "Shape successfuly added. Box contains "+ count + " shapes";
         } else {
-            return "Not enough space for this shape";
+            return "Not enough space for this task1.shape";
         }
     }
 

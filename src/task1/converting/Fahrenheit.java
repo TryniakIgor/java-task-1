@@ -1,4 +1,4 @@
-package converting;
+package task1.converting;
 
 public class Fahrenheit implements ConverterFromCelsius {
     @Override
