@@ -1,7 +1,5 @@
 package annotationAndExeption.validEmail;
 
-import annotationAndExeption.immutablePerson.InputEmailException;
-
 import java.util.Optional;
 
 public class User {

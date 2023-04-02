@@ -1,4 +1,4 @@
-package annotationAndExeption.immutablePerson;
+package annotationAndExeption.validEmail;
 
 public class InputEmailException extends RuntimeException {
 

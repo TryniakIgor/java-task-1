@@ -1,5 +1,5 @@
 import annotationAndExeption.immutablePerson.ImmutablePerson;
-import annotationAndExeption.immutablePerson.InputEmailException;
+import annotationAndExeption.validEmail.InputEmailException;
 import annotationAndExeption.movie.InputYearException;
 import annotationAndExeption.movie.Movie;
 import annotationAndExeption.validEmail.User;
