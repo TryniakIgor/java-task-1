@@ -1,15 +1,16 @@
 package multithreading.waitAndNotify;
 
 import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CheckPrimeNumber implements Runnable {
 
     private final Object lock;
-    private ArrayList<Integer> numbersToCheck;
-    private ArrayList<Integer> primes;
+    private CopyOnWriteArrayList<Integer> numbersToCheck;
+    private CopyOnWriteArrayList<Integer> primes;
     private boolean isFinished;
 
-    public CheckPrimeNumber(ArrayList<Integer> numbersToCheck, ArrayList<Integer> primes, Object lock) {
+    public CheckPrimeNumber(CopyOnWriteArrayList<Integer> numbersToCheck, CopyOnWriteArrayList<Integer> primes, Object lock) {
         this.numbersToCheck = numbersToCheck;
         this.primes = primes;
         this.lock = lock;

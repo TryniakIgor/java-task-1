@@ -5,8 +5,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        ArrayList<Integer> numbersToCheck = new ArrayList<Integer>();
-        ArrayList<Integer> primes = new ArrayList<>();
+        CopyOnWriteArrayList<Integer> numbersToCheck = new CopyOnWriteArrayList<Integer>();
+        CopyOnWriteArrayList<Integer> primes = new CopyOnWriteArrayList<>();
         Object lock = new CheckPrimeNumber(numbersToCheck, primes, new Object());
 
         Thread thread1 = new Thread(new SearchPrimeNumber(1, 100, numbersToCheck, lock));
